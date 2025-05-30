@@ -16,10 +16,14 @@ clash.
 
 ### <center> READER WRITER 
 Multiple readers can read the shared data 
-simultaneously without issues. 
-But if a writer is writing: 
+simultaneously without issues.  
+But if a writer is writing:  
 • No other writer or reader should access 
 the data 
-Readcount is a variable, rest semaphores
+
+semaphore mutex = 1;       // for readCount  
+semaphore wrt = 1;         // for writers
+
+
 
 ![alt text](image-49.png)

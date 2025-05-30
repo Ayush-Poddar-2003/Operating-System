@@ -2,7 +2,7 @@
 In Multi Programming, several processes may 
 compete for finite number of resources. 
 
-If a resource isn’t available process goes in 
+If a resource isn’t available, process goes in 
 waiting state   
 Sometimes state is never again able to change as 
 resources it requested are held by other process 
@@ -46,7 +46,8 @@ each holding a resource and waiting for another.
 resources at once  
 - No Premption : If a process requests a 
 resource not available, preempt all it holds. 
-- Circular Wait : force processes to request in order. 
+- Circular Wait : force processes to request in ascending order. 
+each process Pi must hold a resource with a higher order than the resource it is waiting for from the next process Pi+1. 
 
 ### <center> 2. Avoidance -
 ---
