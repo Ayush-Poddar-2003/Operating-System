@@ -1,42 +1,20 @@
-# <center> FILE HANDLING
-
-**HOW WE STORE DATA?**  
-FILE ?  
-Smallest logical storage unit  
-Named collection of related information stored on secondary storage.  
-Sequence of bits, bytes, lines, records defined by it's creator/owner.
-
----
-FILE SYSTEM ?  
-Collection of files + directory structure + Interface for user to access disk
-
----
-TYPES OF FILES ? 
-1. Text : Seq of char, organised in lines, .txt, .doc
-2. Source : .c++, .py
-3. Object : Seq of bytes, organised into blocks
-4. Executable : .exe
-
----
-FILE ATTRIBUTES ?   
-Detailed info about file stored in directory
-1. Name (only ie human readable)
-2. Identifier (Unique, Numeric)
-3. Type 
-4. Location (Pointer)
-5. Size
-6. Protection (Access control Info)
-7. Time
-8. Date
-9. User Identification
+# ACCESS METHODS
+| Method            | Description                                             | Example                            |
+| ----------------- | ------------------------------------------------------- | ---------------------------------- |
+| **Sequential**    | Read/write in order, one record after another           | Reading a text file line by line   |
+| **Direct/Random** | Access any record directly using its index              | Accessing a student by roll number |
+| **Indexed**       | Uses an index to find blocks faster (like a book index) | Database systems                   |
 
 
----
-OPERATIONS ON FILE ?
-1. Creating
-2. Writing
-3. Reading
-4. Deleting
-5. Truncating
-6. Appending
-7. Renaming
+# ALLOCATION METHODS
+1. Contiguous
+2. Linked
+3. Indexed
+
+# FREE SPACE MANAGEMENT
+| Method          | Description                           |
+| --------------- | ------------------------------------- |
+| **Bitmap**      | 0 = free, 1 = used                    |
+| **Linked List** | Free blocks linked together           |
+| **Grouping**    | Stores free block addresses in groups |
+| **Counting**    | Stores start + count of free blocks   |
